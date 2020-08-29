@@ -1,5 +1,5 @@
 # Puzzle Solver Simplified
- This repository contains simple Java codes for the solution and visualization of various puzzles
+ This repository contains Java codes for the solution and visualization of various puzzles
  
 ### Description:
    #### Magic Square
