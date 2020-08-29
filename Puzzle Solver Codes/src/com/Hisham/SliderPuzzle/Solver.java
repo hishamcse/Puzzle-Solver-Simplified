@@ -1,8 +1,7 @@
-package com.company;
+package com.Hisham.SliderPuzzle;
 
 import edu.princeton.cs.algs4.*;
 
-import java.awt.*;
 import java.util.Deque;
 import java.util.LinkedList;
 
@@ -99,45 +98,6 @@ public class Solver {
         return solution;
     }
 
-    // from here below,not included in assignment
-
-    private static final int WINDOW_SIZE = 300;
-
-    private static void drawGrid(int n) {
-        double squareLength = 0.5 / n;
-        for (int i = 0; i < n; i++)
-            for (int j = 0; j < n; j++) {
-                StdDraw.setPenColor(Color.LIGHT_GRAY);
-                StdDraw.filledSquare(2 * i * squareLength + squareLength, 2 * (n - 1 - j) * squareLength + squareLength, squareLength);
-            }
-
-        StdDraw.setPenColor(Color.BLACK);
-        for (int i = 0; i < n; i++) {
-            if (i % n == 0 && i != 0)
-                StdDraw.setPenRadius(5 / (double) WINDOW_SIZE);
-            else
-                StdDraw.setPenRadius(1 / (double) WINDOW_SIZE);
-            StdDraw.line(squareLength * 2 * i, 0, squareLength * 2 * i, 1);
-            StdDraw.line(0, squareLength * 2 * i, 1, squareLength * 2 * i);
-        }
-    }
-
-    private static void drawNumbers(int[][] board, int n) {
-        double squareLength = 0.5 / n;
-        Font font = new Font("Helvetica", Font.PLAIN, 30);
-        StdDraw.setFont(font);
-        for (int i = 0; i < n; i++)
-            for (int j = 0; j < n; j++) {
-                if (board[i][j] != 0)
-                    font = new Font("Helvetica", Font.BOLD, 30);
-                else
-                    font = new Font("Helvetica", Font.PLAIN, 30);
-                StdDraw.setFont(font);
-                StdDraw.text(2 * i * squareLength + squareLength, 2 * (n - 1 - j) * squareLength + squareLength, Integer.toString(board[i][j]));
-            }
-    }
-
-    // test client (see below)
     public static void main(String[] args) {
 
         // create initial board from file
@@ -153,8 +113,8 @@ public class Solver {
         Solver solver = new Solver(initial);
 
         StdDraw.setCanvasSize(500, 500);
-        drawGrid(n);
-        drawNumbers(new int[n][n], n);
+        SliderVisualizer.drawGrid(tiles,n);
+        SliderVisualizer.drawNumbers(tiles, n);
 
         // print solution to standard output
         if (!solver.isSolvable())
@@ -169,8 +129,8 @@ public class Solver {
                         sol[i][j] = board.getAll()[j][i];
                     }
                 }
-                drawGrid(n);
-                drawNumbers(sol, n);
+                SliderVisualizer.drawGrid(sol,n);
+                SliderVisualizer.drawNumbers(sol, n);
                 StdDraw.pause(1500);
             }
         }

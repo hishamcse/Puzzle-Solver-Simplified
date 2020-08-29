@@ -1,4 +1,4 @@
-package com.company;
+package com.Hisham.SliderPuzzle;
 
 import edu.princeton.cs.algs4.StdIn;
 
