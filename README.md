@@ -8,7 +8,7 @@
      diagonal sums are equal.[NB: n must be odd]
      
    #### Maze
-     Generates Maze, then create solution and visualization
+     Generates Maze, then creates solution and visualization
   
    #### N Rooks Puzzle
      How many ways are there to place N rooks on an N-by-N board so that
