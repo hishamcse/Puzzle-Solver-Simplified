@@ -19,4 +19,5 @@
      Solution and visualization of the 8 and 15 slider puzzle(Test cases are included)
      
   #### Sudoku
-     Solution and visualization of the 9x9 Sudoku (Test file are included.Just change the test file with the 9x9 board you want to solve)
+     Solution and visualization of the 9x9 Sudoku (Test file are included.<br />
+     Just change the test file with the 9x9 board you want to solve)
