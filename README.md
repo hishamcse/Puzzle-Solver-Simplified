@@ -33,3 +33,6 @@
    #### Sudoku
      Solution and visualization of the 9x9 Sudoku (Test file is included.
      Just change the test file with the 9x9 board you want to solve)
+     
+   #### Tic-Tac-Toe
+      TicTacToe game simple Code implemented using Javafx   
