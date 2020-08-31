@@ -6,6 +6,9 @@
      Generates a magic square of order n. A magic squares is an n-by-n
      matrix of the integers 1 to n^2, such that all row, column, and
      diagonal sums are equal.[NB: n must be odd]
+     
+   #### Maze
+     Generates Maze, then creates solution and visualization
   
    #### N Rooks Puzzle
      How many ways are there to place N rooks on an N-by-N board so that
