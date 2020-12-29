@@ -35,4 +35,7 @@
      Just change the test file with the 9x9 board you want to solve)
      
    #### Tic-Tac-Toe
-      TicTacToe game simple Code implemented using Javafx   
+      TicTacToe game simple Code implemented using Javafx  
+      
+   #### Tower-Of-Hanoi
+      Simple Code implementing the steps for Tower_Of_Hanoi to transfer the disks 
